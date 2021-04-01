@@ -1,0 +1,165 @@
+@media (max-width: 1199.98px) {
+    footer .mail {
+        width: 300px !important;
+    }  
+    .mac {
+        width: 50%;
+        right: 20px;
+        bottom:50px;
+    }
+    
+    
+}
+
+
+
+@media (max-width:991px) {
+    .header_burger {
+        display: block;
+        position: relative;
+        left:0;
+        width: 30px;
+        height: 20px;
+        z-index: 2;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+    .header_burger span {
+       position: absolute; 
+       width: 100%;
+       height: 2px;
+       background: #fff;
+       top:9px;
+       transition: 0.7s;
+    }
+    .header_burger:before,
+    .header_burger:after {
+      content: '';
+      position: absolute;  
+      left:0;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      transition: 0.7s;
+    }
+    .header_burger:before {
+        top:0;
+    }
+    .header_burger:after {
+        bottom:0;
+    }
+    .header_menu {
+        position: fixed;
+        top:0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #5e5373;
+        transition: 0.7s;
+    }
+    .header_menu.active {
+        left: 0;
+    }
+    .header_burger.active:before {
+      transform: rotate(45deg);
+      top:9px;  
+    }
+    .header_burger.active:after {
+       transform: rotate(-45deg); 
+       bottom:9px;
+    }
+    .header_burger.active span {
+        transform: scale(0);
+    }
+    .header_list {
+        position: relative;
+        margin-top: 150px;
+        display: block;
+        padding-left: 50px;
+    }
+    .header_list li {
+        margin:15px 0;
+    }
+    
+    footer .row {
+        justify-content: center;
+    }
+    footer .col-xl-4,
+    footer .col-xl-2 {
+        text-align: center;
+    }
+    .stuff {
+        padding-bottom: 20px;
+    }
+    .retina {
+        text-align: center;
+        margin:40px auto;
+    }
+    .mac {
+        display: none;
+    }
+    
+    
+}
+
+
+@media (max-width: 767px) {
+    footer .mail {
+        width: 200px !important;
+    }  
+    
+    footer .row {
+        justify-content: center;
+    }
+    footer .col-xl-4,
+    footer .col-xl-2 {
+        text-align: center;
+    }
+    .mac {
+        display: none;
+    }
+    .team {
+        text-align: center;
+    }
+    .stuff {
+        padding-bottom: 20px;
+    }
+    .retina {
+        text-align: center;
+        margin:40px auto;
+    }
+    
+}
+
+
+
+@media (max-width: 575px) {
+   footer {
+       
+   } 
+   footer .row {
+       justify-content: center;
+   }
+   footer .col-xl-4,
+   footer .col-xl-2 {
+       text-align: center;
+   }
+   footer .mail {
+       width: 200px !important;
+   }
+   .blogs .col-xl-4 {
+       text-align: center !important;
+   }
+   
+   .mac {
+       display: none;
+   }
+   .stuff {
+    padding-bottom: 20px;
+}
+.retina {
+    text-align: center;
+    margin:40px auto;
+}
+    
+}
